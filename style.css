@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --first_color: #29282e;
+  --second_color: #121212;
+  --three_color: #1e1e20;
+  --fourth_color: #3b3b3b;
+  --btn_color: #675aff;
+  --text_color: #ffffff;
+  --link_color: #8b6aca;
+}
+
+main {
+  height: 100vh;
+  background-color: var(--first_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main h1, main h3, main p {
+  color: var(--text_color);
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+main a {
+  color: var(--link_color);
+  font-family: "Schibsted Grotesk", sans-serif;
+}
+main section {
+  background-color: var(--second_color);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+}
+main section form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+main section form .btn-1 {
+  display: flex;
+  align-items: center;
+  background-color: var(--btn_color);
+  padding: 1.7rem;
+  border-radius: 10px;
+  color: var(--text_color);
+  font-size: 15px;
+  width: 175px;
+  transition: 500ms;
+  gap: 10px;
+}
+main section form .btn-1 i {
+  font-size: 25px;
+}
+main section form .btn-1:hover {
+  box-shadow: 0 0 10px var(--btn_color);
+  cursor: pointer;
+}
+main section form .konter {
+  display: flex;
+  width: 100%;
+  gap: 15px;
+  justify-content: center;
+}
+main section form .konter .btn-2 {
+  display: flex;
+  align-items: center;
+  background-color: var(--btn_color);
+  border-radius: 10px;
+  padding: 0.4rem;
+  color: var(--text_color);
+  font-size: 15px;
+  width: 100px;
+  transition: 500ms;
+  justify-content: center;
+}
+main section form .konter .btn-2:hover {
+  box-shadow: 0 0 10px var(--btn_color);
+  cursor: pointer;
+}
+main section form .konter .input-1 {
+  width: 75%;
+  background-color: var(--fourth_color);
+  color: var(--text_color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0.4rem;
+  box-shadow: none;
+}
+main section form .konter .input-1:focus {
+  border: solid 2px #675aff;
+  outline: none;
+}
+main section .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 150px;
+  border-radius: 15px;
+  border: solid 4px var(--link_color);
+  padding-right: 4rem;
+  padding-left: 4rem;
+}
+main section .box h3 {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+main section p a {
+  transition: 250ms;
+}
+main section p a:hover {
+  color: var(--text_color);
+}
+main article {
+  display: flex;
+  text-align: start;
+  justify-content: space-around;
+}
+main article div {
+  width: 250px;
+  background-color: var(--three_color);
+  border-radius: 15px;
+  border: solid azure 0.001rem;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  height: 115px;
+  font-size: 14px;
+}
+main article div a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main article div a p {
+  color: var(--link_color);
+  transition: 500ms;
+}
+main article div a p:hover {
+  margin-right: 7px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --first_color: #29282e;
+    --second_color: #121212;
+    --three_color: #1e1e20;
+    --fourth_color: #3b3b3b;
+    --btn_color: #675aff;
+    --text_color: #ffffff;
+    --link_color: #8b6aca;
+}
+
+main{
+    h1, h3, p{color: var(--text_color); font-family: 'Schibsted Grotesk', sans-serif;} 
+    a{color: var(--link_color);   font-family: 'Schibsted Grotesk', sans-serif;}
+
+    height: 100vh;
+    background-color: var(--first_color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    section{
+        background-color: var(--second_color);
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        border-radius: 15px;
+
+        form{
+            // stage 1
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            .btn-1{
+                display: flex;
+                align-items: center;
+                background-color: var(--btn_color);
+                padding: 1.7rem;
+                border-radius: 10px;
+                color: var(--text_color);
+                font-size: 15px;
+                width: 175px;
+                transition: 500ms;
+                gap: 10px;
+                i{font-size: 25px;}
+            }.btn-1:hover{box-shadow: 0 0 10px var(--btn_color);cursor: pointer;}
+
+            // stage 2
+            .konter{
+                display: flex;
+                width: 100%;
+                gap: 15px;
+                justify-content: center;
+                
+                .btn-2{
+                    display: flex;
+                    align-items: center;
+                    background-color: var(--btn_color);
+                    border-radius: 10px;
+                    padding: 0.4rem;
+                    color: var(--text_color);
+                    font-size: 15px;
+                    width: 100px;
+                    transition: 500ms;
+                    justify-content: center;
+                }.btn-2:hover{box-shadow: 0 0 10px var(--btn_color);cursor: pointer;}
+                
+                .input-1{
+                    width: 75%;
+                    background-color: var(--fourth_color);
+                    color: var(--text_color);
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    padding: 0.4rem;
+                    box-shadow: none;
+                }.input-1:focus{
+                    border: solid 2px #675aff;
+                    outline: none;
+                }
+            }
+        }
+
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 150px;
+            border-radius: 15px;
+            border: solid 4px var(--link_color);
+            padding-right: 4rem;
+            padding-left:  4rem;
+
+            h3{
+                margin: auto;
+                text-align: center;
+                align-items: center;
+            }
+        }
+
+        p{a{transition: 250ms;}
+        a:hover{color: var(--text_color);}}}
+
+        article{
+            display: flex;
+            text-align: start;
+            justify-content: space-around;
+            div{
+                width: 250px;
+                background-color: var(--three_color);
+                border-radius: 15px;
+                border: solid azure 0.001rem;
+                padding: 10px;
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                gap: 15px;
+                height: 115px;                
+                font-size: 14px;
+
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+
+                    p{color: var(--link_color); transition: 500ms;}
+                    p:hover{margin-right: 7px;}
+                }
+            }
+        }
+}
